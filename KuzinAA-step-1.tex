@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{a4wide}
+\title{Reconstructed abstract of the paper `10.1109/ICDM.2008.17'}
+%\author{not specified, not necessary here}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The paper  presents an algorithm designed for anomaly detection, introducing the concept of isolating outliers instead of profiling normal points. Using the properties of random partitioning, the Isolation Forest (i Forest) algorithm isolates anomalies more efficiently than traditional method. The technique constructs multiple isolation trees, where anomalies, being rare and different, tend to be isolated much earlier than regular instances. This approach provides a scalable, fast solution that requires fewer computational resources and maintaine  high performance in detecting anomalies,
+\end{abstract}
+\paragraph{Keywords:} Anomaly detection, Isolation tree, Binary
+Search Tree
+
+\paragraph{Highlights:}
+\begin{enumerate}
+\item Anomalies are more likely to be isolated quickly using random partitioning, as they are rare and different from the bulk of the data.
+\item The iForest algorithm constructs multiple binary trees (isolation trees) by randomly selecting a feature and then randomly splitting its values
+\item Has a
+linear time complexity with a low constant and a low memory requirement
+\item No need for assumptions about the data distribution, making it robust to different types of datasets.
+\end{enumerate}
+
+\section{Introduction}
+I chose this paper due to my personal study plan. Now I learn different methods of anomaly detection  
+%\begin{figure}
+%\includegraphics[scale=0.35]{SVD_derint}
+%\caption{A rigorous description of what the reader sees on the plot and the consequences of the shown result}
+%\end{figure}
+
+\bibliographystyle{unsrt}
+\begin{thebibliography}{9}
+
+\bibitem{liu2008isolation} 
+Liu, Fei Tony; Ting, Kai Ming; Zhou, Zhi-Hua (December 2008). 
+\textit{Isolation Forest}. 2008 Eighth IEEE International Conference on Data Mining. pp. 413–422. doi:10.1109/ICDM.2008.17. ISBN 978-0-7695-3502-9. S2CID 6505449.
+
+\end{thebibliography}
+\end{document}
